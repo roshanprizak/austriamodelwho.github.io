@@ -1,3 +1,4 @@
+
 .content-block {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -28,9 +29,12 @@
   justify-content: center;
 }
 
+.hero-banner .content-block .bottom-pad {
+  bottom: 30px;
+}
+
 .hero-banner h1 {
   color: #39729E;
-  font-size: 2.5rem;
 }
 
 
@@ -111,9 +115,6 @@
   border: none;
 }
 
-
-
-
 .hero-banner ul {
   padding-inline-start: 21px;
   font-size: 1.1rem;
@@ -123,8 +124,18 @@
   padding-bottom: 0.4rem;
 }
 
-
 .alt-background {
+  background-color: #39729E;
+  color: #dee2e6;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.alt-background h1{
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.alt-background-light {
   background-color: rgb(247,249,251);
   border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
@@ -132,6 +143,29 @@
 
 .hello-quarto {
   padding-bottom: 1rem;
+}
+
+@media (min-width: 100px) {
+.hello-quarto h1 {
+  font-size: x-large;
+}
+.hello-quarto h3 {
+  font-size: large;
+}
+}
+
+@media (min-width: 900px) {
+  .hello-quarto h1 {
+    font-size: xx-large;
+  }
+
+  .hello-quarto h3 {
+    font-size: x-large;
+  }
+}
+
+.hello-quarto img{
+  margin-left: -5px;
 }
 
 @media (min-width: 600px) {
