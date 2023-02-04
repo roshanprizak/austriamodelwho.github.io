@@ -117,13 +117,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
-<style>
-    .quarto-title-block .quarto-title-banner {
-      background: #EDF3F9;
-    }
-    </style>
 
 
+<link rel="stylesheet" href="../../../../styles.css">
 <meta property="og:title" content="Austria Model WHO - Customizing Table Output">
 <meta property="og:description" content="This post provides an overview of these capabilities in Quarto. For more detail about all the features Quarto for authoring tables, see [Tables](/docs/authoring/tables.qmd).">
 <meta property="og:image" content="table.png">
@@ -134,7 +130,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -221,7 +217,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Customizing Table Output</h1>
@@ -262,8 +258,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -271,9 +268,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#explicit-column-widths" id="toc-explicit-column-widths" class="nav-link" data-scroll-target="#explicit-column-widths">Explicit Column Widths</a></li>
   </ul>
 </nav>
-</nav>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -372,7 +366,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 </tbody>
 </table>
-<p>In addition to the above, which focused on some of the features of Quarto when writing pipe tables in markdown, you can also author tables using grid syntax. You review the <a href="../../../../docs/authoring/tables.qmd">documentation</a>. for more detail.</p>
+<p>In addition to the above, which focused on some of the features of Quarto when writing pipe tables in markdown, you can also author tables using grid syntax.</p>
 
 
 </section>
@@ -396,17 +390,6 @@ function toggleLightDark() {
 }
 
 document.querySelector('a[href^="javascript:void(0)"]').onclick = toggleLightDark;
-
-// document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<i class="bi bi-search" role="img"></i><span class="menu-text">Search</span>';
-
-window.addEventListener('load', function () {
-   var qs = document.querySelector('#quarto-search');
-   // var qs1 = qs.querySelector('.aa-DetachedSearchButtonIcon');
-   qs1 = qs.children
-
-   document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<span class="menu-text">Search</span>';
-   console.log(document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0])
-});
 
 // replace cmd keyboard shortcut w/ control on non-Mac platforms
 const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
@@ -665,8 +648,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<script src="https://giscus.app/client.js" data-repo="quarto-dev/quarto-web" data-repo-id="MDEwOlJlcG9zaXRvcnkzNDc2MzMzNTg=" data-category="Blog" data-category-id="DIC_kwDOFLh2zs4CBQQq" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 

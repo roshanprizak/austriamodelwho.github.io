@@ -53,10 +53,13 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Austria Model WHO - Frequently Asked Questions">
+<meta property="og:description" content="If you are an R Markdown user wondering about the relationship between Quarto and R Markdown, see also our FAQ for R Markdown Users.">
 <meta property="og:site-name" content="Austria Model WHO">
 <meta name="twitter:title" content="Austria Model WHO - Frequently Asked Questions">
+<meta name="twitter:description" content="If you are an R Markdown user wondering about the relationship between Quarto and R Markdown, see also our FAQ for R Markdown Users.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -173,8 +176,29 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-
-<div class="body-content">
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-can-i-use-quarto-for" id="toc-what-can-i-use-quarto-for">What can I use Quarto for?</a></li>
+  <li><a href="#how-do-i-install-quarto" id="toc-how-do-i-install-quarto">How do I install Quarto?</a></li>
+  <li><a href="#is-quarto-free-to-use" id="toc-is-quarto-free-to-use">Is Quarto free to use?</a></li>
+  <li><a href="#what-output-formats-can-quarto-create" id="toc-what-output-formats-can-quarto-create">What output formats can Quarto create?</a></li>
+  <li><a href="#what-editing-tools-can-i-use-with-quarto" id="toc-what-editing-tools-can-i-use-with-quarto">What editing tools can I use with Quarto?</a></li>
+  <li><a href="#can-i-use-jupyter-notebooks-with-quarto" id="toc-can-i-use-jupyter-notebooks-with-quarto">Can I use Jupyter notebooks with Quarto?</a></li>
+  <li><a href="#what-programming-languages-are-supported-in-quarto" id="toc-what-programming-languages-are-supported-in-quarto">What programming languages are supported in Quarto?</a></li>
+  <li><a href="#what-human-languages-are-supported-in-quarto" id="toc-what-human-languages-are-supported-in-quarto">What human languages are supported in Quarto?</a></li>
+  <li><a href="#can-i-use-quarto-to-develop-proprietary-content" id="toc-can-i-use-quarto-to-develop-proprietary-content">Can I use Quarto to develop proprietary content?</a></li>
+  <li><a href="#how-can-i-share-documents-and-have-people-comment-on-them" id="toc-how-can-i-share-documents-and-have-people-comment-on-them">How can I share documents and have people comment on them?</a></li>
+  <li><a href="#can-i-do-collaborative-editing-with-quarto" id="toc-can-i-do-collaborative-editing-with-quarto">Can I do collaborative editing with Quarto?</a></li>
+  <li><a href="#where-can-i-publish-quarto-websites" id="toc-where-can-i-publish-quarto-websites">Where can I publish Quarto websites?</a></li>
+  <li><a href="#does-rstudio-connect-support-quarto" id="toc-does-rstudio-connect-support-quarto">Does RStudio Connect support Quarto?</a></li>
+  <li><a href="#who-are-the-developers-of-quarto" id="toc-who-are-the-developers-of-quarto">Who are the developers of Quarto?</a></li>
+  <li><a href="#why-the-name-quarto" id="toc-why-the-name-quarto">Why the name Quarto?</a></li>
+  <li><a href="#where-can-i-report-bugs-or-request-features" id="toc-where-can-i-report-bugs-or-request-features">Where can I report bugs or request features?</a></li>
+  <li><a href="#where-can-i-ask-questions-and-discuss-using-quarto-with-others" id="toc-where-can-i-ask-questions-and-discuss-using-quarto-with-others">Where can I ask questions and discuss using Quarto with others?</a></li>
+  </ul>
+</nav>
 <p>If you are an R Markdown user wondering about the relationship between Quarto and R Markdown, see also our <a href="../../docs/faq/rmarkdown.html">FAQ for R Markdown Users</a>.</p>
 <section id="what-can-i-use-quarto-for" class="level3">
 <h3 class="anchored" data-anchor-id="what-can-i-use-quarto-for">What can I use Quarto for?</h3>
@@ -262,7 +286,6 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="discuss.-debate.-make-policies.-join-us-at-austria-model-who.">Discuss. Debate. Make policies. Join us at Austria Model WHO.</h3>
 <p><a href="../../register.html"><button class="button-18-normal" role="button">Register</button></a></p>
 </section>
-</div>
 </div>
 <div class="column-screen">
 <div class="my-footer">
@@ -379,17 +402,6 @@ function toggleLightDark() {
 }
 
 document.querySelector('a[href^="javascript:void(0)"]').onclick = toggleLightDark;
-
-// document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<i class="bi bi-search" role="img"></i><span class="menu-text">Search</span>';
-
-window.addEventListener('load', function () {
-   var qs = document.querySelector('#quarto-search');
-   // var qs1 = qs.querySelector('.aa-DetachedSearchButtonIcon');
-   qs1 = qs.children
-
-   document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<span class="menu-text">Search</span>';
-   console.log(document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0])
-});
 
 // replace cmd keyboard shortcut w/ control on non-Mac platforms
 const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;

@@ -52,6 +52,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Austria Model WHO - Register">
 <meta property="og:description" content="Sign up for the 14-16 April event in Krems, Austria">
 <meta property="og:site-name" content="Austria Model WHO">
@@ -174,10 +175,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="body-content">
 <div class="h3 text-center">
 <p>Registration not open yet!</p>
-</div>
 </div>
 <div class="column-screen">
 <div class="my-footer-home">
@@ -294,17 +293,6 @@ function toggleLightDark() {
 }
 
 document.querySelector('a[href^="javascript:void(0)"]').onclick = toggleLightDark;
-
-// document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<i class="bi bi-search" role="img"></i><span class="menu-text">Search</span>';
-
-window.addEventListener('load', function () {
-   var qs = document.querySelector('#quarto-search');
-   // var qs1 = qs.querySelector('.aa-DetachedSearchButtonIcon');
-   qs1 = qs.children
-
-   document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<span class="menu-text">Search</span>';
-   console.log(document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0])
-});
 
 // replace cmd keyboard shortcut w/ control on non-Mac platforms
 const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;

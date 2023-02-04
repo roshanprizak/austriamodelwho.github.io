@@ -85,6 +85,7 @@ ul.task-list li input[type="checkbox"] {
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Austria Model WHO - Austria Model WHO Blog">
 <meta property="og:description" content="News, tips, and commentary about all things Austria Model WHO">
 <meta property="og:image" content="../../docs/blog/posts/2022-02-15-feature-tables/table.png">
@@ -217,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Features,Authoring,Tables" data-listing-date-sort="1644879600000" data-listing-file-modified-sort="1674666077000" data-listing-reading-time-sort="2.44">
+<div class="quarto-post image-right" data-index="0" data-categories="Features,Authoring,Tables" data-listing-date-sort="1644879600000" data-listing-file-modified-sort="1675551011099" data-listing-reading-time-sort="2.41">
 <div class="thumbnail">
 <p><a href="../../docs/blog/posts/2022-02-15-feature-tables/index.html"> <img src="../../docs/blog/posts/2022-02-15-feature-tables/table.png" class="thumnail-image" alt="Table 1: Example. Has two subtables: Subtable a, Cars, with columns for speed and dist; and subtable b, Pressure, with columns for temperature and pressure."> </a></p>
 </div>
@@ -281,17 +282,6 @@ function toggleLightDark() {
 }
 
 document.querySelector('a[href^="javascript:void(0)"]').onclick = toggleLightDark;
-
-// document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<i class="bi bi-search" role="img"></i><span class="menu-text">Search</span>';
-
-window.addEventListener('load', function () {
-   var qs = document.querySelector('#quarto-search');
-   // var qs1 = qs.querySelector('.aa-DetachedSearchButtonIcon');
-   qs1 = qs.children
-
-   document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<span class="menu-text">Search</span>';
-   console.log(document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0])
-});
 
 // replace cmd keyboard shortcut w/ control on non-Mac platforms
 const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;

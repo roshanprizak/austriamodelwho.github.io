@@ -53,6 +53,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Austria Model WHO - Contact us">
 <meta property="og:site-name" content="Austria Model WHO">
 <meta name="twitter:title" content="Austria Model WHO - Contact us">
@@ -172,7 +173,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="body-content">
 <div class="hero-banner alt-background-light">
 <section id="just-write-to-us.-well-respond-soon." class="level2 content-block">
 <h2 class="anchored" data-anchor-id="just-write-to-us.-well-respond-soon.">Just write to us. We’ll respond soon.</h2>
@@ -204,7 +204,6 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="discuss.-debate.-make-policies.-join-us-at-austria-model-who.">Discuss. Debate. Make policies. Join us at Austria Model WHO.</h3>
 <p><a href="../../register.html"><button class="button-18-normal" role="button">Register</button></a></p>
 </section>
-</div>
 </div>
 <div class="column-screen">
 <div class="my-footer">
@@ -321,17 +320,6 @@ function toggleLightDark() {
 }
 
 document.querySelector('a[href^="javascript:void(0)"]').onclick = toggleLightDark;
-
-// document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<i class="bi bi-search" role="img"></i><span class="menu-text">Search</span>';
-
-window.addEventListener('load', function () {
-   var qs = document.querySelector('#quarto-search');
-   // var qs1 = qs.querySelector('.aa-DetachedSearchButtonIcon');
-   qs1 = qs.children
-
-   document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<span class="menu-text">Search</span>';
-   console.log(document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0])
-});
 
 // replace cmd keyboard shortcut w/ control on non-Mac platforms
 const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;

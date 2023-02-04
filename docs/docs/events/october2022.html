@@ -54,6 +54,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Austria Model WHO - Energy Security and Health">
 <meta property="og:description" content="Check out the [theme guide](pdfs/ThemeGuideOctober2022.pdf)">
 <meta property="og:site-name" content="Austria Model WHO">
@@ -174,8 +175,18 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#theme" id="toc-theme" class="nav-link active" data-scroll-target="#theme">Theme</a></li>
+  <li><a href="#expert-talks" id="toc-expert-talks" class="nav-link" data-scroll-target="#expert-talks">Expert talks</a></li>
+  <li><a href="#organizing-committee" id="toc-organizing-committee" class="nav-link" data-scroll-target="#organizing-committee">Organizing Committee</a></li>
+  <li><a href="#gallery" id="toc-gallery" class="nav-link" data-scroll-target="#gallery">Gallery</a></li>
+  <li><a href="#testimonials" id="toc-testimonials" class="nav-link" data-scroll-target="#testimonials">Testimonials</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
@@ -186,7 +197,6 @@ ul.task-list li input[type="checkbox"] {
 <!--
 ![](october2022/October2022_right.png){width=400}
 -->
-<div class="body-content">
 <section id="theme" class="level3">
 <h3 class="anchored" data-anchor-id="theme">Theme</h3>
 </section>
@@ -321,7 +331,6 @@ Rahul
 <p><a href="../../register.html"><button class="button-18-normal" role="button">Register</button></a></p>
 </section>
 </div>
-</div>
 <div class="column-screen">
 <div class="my-footer">
 <div class="my-footer-first-column">
@@ -445,17 +454,6 @@ function toggleLightDark() {
 }
 
 document.querySelector('a[href^="javascript:void(0)"]').onclick = toggleLightDark;
-
-// document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<i class="bi bi-search" role="img"></i><span class="menu-text">Search</span>';
-
-window.addEventListener('load', function () {
-   var qs = document.querySelector('#quarto-search');
-   // var qs1 = qs.querySelector('.aa-DetachedSearchButtonIcon');
-   qs1 = qs.children
-
-   document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0].innerHTML += '<span class="menu-text">Search</span>';
-   console.log(document.querySelectorAll('.aa-DetachedSearchButtonIcon')[0])
-});
 
 // replace cmd keyboard shortcut w/ control on non-Mac platforms
 const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
