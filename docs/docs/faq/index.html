@@ -36,10 +36,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,10 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Austria Model WHO - Frequently Asked Questions">
-<meta property="og:description" content="If you are an R Markdown user wondering about the relationship between Quarto and R Markdown, see also our FAQ for R Markdown Users.">
 <meta property="og:site-name" content="Austria Model WHO">
 <meta name="twitter:title" content="Austria Model WHO - Frequently Asked Questions">
-<meta name="twitter:description" content="If you are an R Markdown user wondering about the relationship between Quarto and R Markdown, see also our FAQ for R Markdown Users.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -134,6 +134,8 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../docs/blog/index.html">
  <span class="menu-text">Blog</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../docs/sponsors/index.html">
  <span class="menu-text">Sponsors</span></a>
@@ -143,23 +145,9 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/AModelwho"><i class="bi bi-twitter" role="img" aria-label="Austria Model WHO Twitter">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.instagram.com/austria_modelwho/"><i class="bi bi-instagram" role="img" aria-label="Austria Model WHO Instagram">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:teamaustriamodelwho@gmail.com"><i class="bi bi-envelope" role="img" aria-label="Austria Model WHO Email">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -192,29 +180,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#what-can-i-use-quarto-for" id="toc-what-can-i-use-quarto-for">What can I use Quarto for?</a></li>
-  <li><a href="#how-do-i-install-quarto" id="toc-how-do-i-install-quarto">How do I install Quarto?</a></li>
-  <li><a href="#is-quarto-free-to-use" id="toc-is-quarto-free-to-use">Is Quarto free to use?</a></li>
-  <li><a href="#what-output-formats-can-quarto-create" id="toc-what-output-formats-can-quarto-create">What output formats can Quarto create?</a></li>
-  <li><a href="#what-editing-tools-can-i-use-with-quarto" id="toc-what-editing-tools-can-i-use-with-quarto">What editing tools can I use with Quarto?</a></li>
-  <li><a href="#can-i-use-jupyter-notebooks-with-quarto" id="toc-can-i-use-jupyter-notebooks-with-quarto">Can I use Jupyter notebooks with Quarto?</a></li>
-  <li><a href="#what-programming-languages-are-supported-in-quarto" id="toc-what-programming-languages-are-supported-in-quarto">What programming languages are supported in Quarto?</a></li>
-  <li><a href="#what-human-languages-are-supported-in-quarto" id="toc-what-human-languages-are-supported-in-quarto">What human languages are supported in Quarto?</a></li>
-  <li><a href="#can-i-use-quarto-to-develop-proprietary-content" id="toc-can-i-use-quarto-to-develop-proprietary-content">Can I use Quarto to develop proprietary content?</a></li>
-  <li><a href="#how-can-i-share-documents-and-have-people-comment-on-them" id="toc-how-can-i-share-documents-and-have-people-comment-on-them">How can I share documents and have people comment on them?</a></li>
-  <li><a href="#can-i-do-collaborative-editing-with-quarto" id="toc-can-i-do-collaborative-editing-with-quarto">Can I do collaborative editing with Quarto?</a></li>
-  <li><a href="#where-can-i-publish-quarto-websites" id="toc-where-can-i-publish-quarto-websites">Where can I publish Quarto websites?</a></li>
-  <li><a href="#does-rstudio-connect-support-quarto" id="toc-does-rstudio-connect-support-quarto">Does RStudio Connect support Quarto?</a></li>
-  <li><a href="#who-are-the-developers-of-quarto" id="toc-who-are-the-developers-of-quarto">Who are the developers of Quarto?</a></li>
-  <li><a href="#why-the-name-quarto" id="toc-why-the-name-quarto">Why the name Quarto?</a></li>
-  <li><a href="#where-can-i-report-bugs-or-request-features" id="toc-where-can-i-report-bugs-or-request-features">Where can I report bugs or request features?</a></li>
-  <li><a href="#where-can-i-ask-questions-and-discuss-using-quarto-with-others" id="toc-where-can-i-ask-questions-and-discuss-using-quarto-with-others">Where can I ask questions and discuss using Quarto with others?</a></li>
-  </ul>
-</nav>
+
+<div class="body-content">
 <p>If you are an R Markdown user wondering about the relationship between Quarto and R Markdown, see also our <a href="../../docs/faq/rmarkdown.html">FAQ for R Markdown Users</a>.</p>
 <section id="what-can-i-use-quarto-for" class="level3">
 <h3 class="anchored" data-anchor-id="what-can-i-use-quarto-for">What can I use Quarto for?</h3>
@@ -303,6 +270,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="../../register.html"><button class="button-18-normal" role="button">Register</button></a></p>
 </section>
 </div>
+</div>
 <div class="column-screen">
 <div class="my-footer">
 <div class="my-footer-first-column">
@@ -313,6 +281,19 @@ ul.task-list li input[type="checkbox"] {
 <b>AUSTRIA MODEL WHO</b>
 </h4>
 <ul>
+<li>
+<div class="hor-flex">
+<h3 class="anchored">
+<a href="https://twitter.com/AModelwho"><i class="bi bi-twitter"></i></a>
+</h3>
+<h3 class="anchored">
+<a href="https://www.instagram.com/austria_modelwho/"><i class="bi bi-instagram"></i></a>
+</h3>
+<h3 class="anchored">
+<a href="mailto:teamaustriamodelwho@gmail.com"><i class="bi bi-envelope"></i></a>
+</h3>
+</div>
+</li>
 <li>
 <a href="../../about.html">About</a>
 </li>
@@ -387,18 +368,6 @@ Research
 
 
 </main> <!-- /main -->
-<script type="text/javascript">
-
-// replace cmd keyboard shortcut w/ control on non-Mac platforms
-const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
-if (!kPlatformMac) {
-   var kbds = document.querySelectorAll("kbd")
-   kbds.forEach(function(kbd) {
-      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
-   });
-}
-
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -419,6 +388,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

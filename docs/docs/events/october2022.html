@@ -37,10 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,6 +136,8 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../docs/blog/index.html">
  <span class="menu-text">Blog</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../docs/sponsors/index.html">
  <span class="menu-text">Sponsors</span></a>
@@ -143,23 +147,9 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/AModelwho"><i class="bi bi-twitter" role="img" aria-label="Austria Model WHO Twitter">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.instagram.com/austria_modelwho/"><i class="bi bi-instagram" role="img" aria-label="Austria Model WHO Instagram">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:teamaustriamodelwho@gmail.com"><i class="bi bi-envelope" role="img" aria-label="Austria Model WHO Email">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -191,18 +181,8 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#theme" id="toc-theme" class="nav-link active" data-scroll-target="#theme">Theme</a></li>
-  <li><a href="#expert-talks" id="toc-expert-talks" class="nav-link" data-scroll-target="#expert-talks">Expert talks</a></li>
-  <li><a href="#organizing-committee" id="toc-organizing-committee" class="nav-link" data-scroll-target="#organizing-committee">Organizing Committee</a></li>
-  <li><a href="#gallery" id="toc-gallery" class="nav-link" data-scroll-target="#gallery">Gallery</a></li>
-  <li><a href="#testimonials" id="toc-testimonials" class="nav-link" data-scroll-target="#testimonials">Testimonials</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
@@ -213,16 +193,16 @@ ul.task-list li input[type="checkbox"] {
 <!--
 ![](october2022/October2022_right.png){width=400}
 -->
-<section id="theme" class="level2 text-center">
-<h2 class="anchored" data-anchor-id="theme">Theme</h2>
+<div class="body-content">
+<section id="theme" class="level3">
+<h3 class="anchored" data-anchor-id="theme">Theme</h3>
 </section>
-<section id="expert-talks" class="level2 text-center">
-<h2 class="anchored" data-anchor-id="expert-talks">Expert talks</h2>
-</section>
+<section id="expert-talks" class="level3">
+<h3 class="anchored" data-anchor-id="expert-talks">Expert talks</h3>
 <div class="grid text-center">
 <div class="g-col-12 g-col-md-6">
 <p><img src="october2022/Prof. Matthias Klump.jpg" class="img-fluid" width="250"></p>
-<div class="h3">
+<div class="h4">
 <p>Prof.&nbsp;Dr.&nbsp;Matthias Klump</p>
 </div>
 <p>Georg-August-Universität Göttingen</p>
@@ -233,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="g-col-12 g-col-md-6">
 <p><img src="october2022/Dr. Jawad Noon.jpg" class="img-fluid" width="250"></p>
-<div class="h3">
+<div class="h4">
 <p>Dr.&nbsp;Jawad Noon</p>
 </div>
 <p>Georg-August-Universität Göttingen</p>
@@ -243,91 +223,111 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<section id="organizing-committee" class="level2 text-center">
-<h2 class="anchored" data-anchor-id="organizing-committee">Organizing Committee</h2>
 </section>
-<div class="grid committee">
-<div class="g-col-md-1 g-col-1">
+<section id="organizing-committee" class="level3">
+<h3 class="anchored" data-anchor-id="organizing-committee">Organizing Committee</h3>
+<div class="grid committee text-center">
+<div class="g-col-sm-1 g-col-3">
 
 </div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#KeerthiBio"><img src="../../photos/Keerthi.png" class="img-fluid figure-img" data-html="true" title="Dr. Keerthi Dubbala"></a></p>
-</figure>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#KeerthiBio"><img src="../../photos/Keerthi.png" class="img-fluid" style="width:100.0%" title="Dr. Keerthi Dubbala"></a>
+<p class="long-name">
+Dr.&nbsp;Keerthi Dubbala
+</p>
+<p class="short-name">
+Keerthi
+</p>
 </div>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#BhagiBio"><img src="../../photos/Bhagi.png" class="img-fluid" title="Dr. Bhagyshree Jamge"></a>
+<p class="long-name">
+Dr.&nbsp;Bhagyshree Jamge
+</p>
+<p class="short-name">
+Bhagyshree
+</p>
 </div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#BhagiBio"><img src="../../photos/Bhagi.png" class="img-fluid figure-img" title="Dr. Bhagyshree Jamge"></a></p>
-</figure>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#RoshanBio"><img src="../../photos/Roshan.png" class="img-fluid" title="Dr. Roshan Prizak"></a>
+<p class="long-name">
+Dr.&nbsp;Roshan Prizak
+</p>
+<p class="short-name">
+Roshan
+</p>
 </div>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#SarahBio"><img src="../../photos/Sarah.png" class="img-fluid" title="Sarah Grünbacher"></a>
+<p class="long-name">
+Sarah Grünbacher
+</p>
+<p class="short-name">
+Sarah
+</p>
 </div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#RoshanBio"><img src="../../photos/Roshan.png" class="img-fluid figure-img" title="Dr. Roshan Prizak"></a></p>
-</figure>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#KabilanBio"><img src="../../photos/Kabilan.png" class="img-fluid" title="Kabilan Sarala Vijayakumar"></a>
+<p class="long-name">
+Kabilan Sarala Vijayakumar
+</p>
+<p class="short-name">
+Kabilan
+</p>
 </div>
-</div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#SarahBio"><img src="../../photos/Sarah.png" class="img-fluid figure-img" title="Sarah Grünbacher"></a></p>
-</figure>
-</div>
-</div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#KabilanBio"><img src="../../photos/Kabilan.png" class="img-fluid figure-img" title="Kabilan Sarala Vijayakumar"></a></p>
-</figure>
-</div>
-</div>
-<div class="g-col-md-2 g-col-2">
+<div id="emptygrid" class="g-col-sm-2 g-col-3">
 
 </div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#DhanalakshmiBio"><img src="../../photos/Dhanalakshmi.png" class="img-fluid figure-img" title="Dhanlakshmi Shunmugam"></a></p>
-</figure>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#DhanalakshmiBio"><img src="../../photos/Dhanalakshmi.png" class="img-fluid" title="Dhanlakshmi Shunmugam"></a>
+<p class="long-name">
+Dhanlakshmi Shunmugam
+</p>
+<p class="short-name">
+Dhanlakshmi
+</p>
+</div>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#KatheBio"><img src="../../photos/Kathe.png" class="img-fluid" title="Katherina Tavernini"></a>
+<p class="long-name">
+Katherina Tavernini
+</p>
+<p class="short-name">
+Katherina
+</p>
+</div>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#NicoleBio"><img src="../../photos/Nicole.png" class="img-fluid" title="Nicole Sophie Brunner "></a>
+<p class="long-name">
+Nicole Sophie Brunner
+</p>
+<p class="short-name">
+Nicole
+</p>
+</div>
+<div class="g-col-sm-2 g-col-3">
+<a href="../../docs/committee/index.html#RahulBio"><img src="../../photos/Rahul.png" class="img-fluid" title="Dr. Rahul Bharadwaj Pisupati"></a>
+<p class="long-name">
+Dr.&nbsp;Rahul Pisupati
+</p>
+<p class="short-name">
+Rahul
+</p>
 </div>
 </div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#KatheBio"><img src="../../photos/Kathe.png" class="img-fluid figure-img" title="Katherina Tavernini"></a></p>
-</figure>
-</div>
-</div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#NicoleBio"><img src="../../photos/Nicole.png" class="img-fluid figure-img" title="Nicole Sophie Brunner "></a></p>
-</figure>
-</div>
-</div>
-<div class="g-col-md-2 g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../docs/committee/index.html#RahulBio"><img src="../../photos/Rahul.png" class="img-fluid figure-img" title="Dr. Rahul Bharadwaj Pisupati"></a></p>
-</figure>
-</div>
-</div>
-</div>
-<section id="gallery" class="level2 text-center">
-<h2 class="anchored" data-anchor-id="gallery">Gallery</h2>
 </section>
-<section id="testimonials" class="level2 text-center">
-<h2 class="anchored" data-anchor-id="testimonials">Testimonials</h2>
+<section id="gallery" class="level3">
+<h3 class="anchored" data-anchor-id="gallery">Gallery</h3>
+</section>
+<section id="testimonials" class="level3">
+<h3 class="anchored" data-anchor-id="testimonials">Testimonials</h3>
 </section>
 <div class="bottom-banner alt-background-light">
 <section id="discuss.-debate.-make-policies.-join-us-at-austria-model-who." class="level3 content-block">
 <h3 class="anchored" data-anchor-id="discuss.-debate.-make-policies.-join-us-at-austria-model-who.">Discuss. Debate. Make policies. Join us at Austria Model WHO.</h3>
 <p><a href="../../register.html"><button class="button-18-normal" role="button">Register</button></a></p>
 </section>
+</div>
 </div>
 <div class="column-screen">
 <div class="my-footer">
@@ -339,6 +339,19 @@ ul.task-list li input[type="checkbox"] {
 <b>AUSTRIA MODEL WHO</b>
 </h4>
 <ul>
+<li>
+<div class="hor-flex">
+<h3 class="anchored">
+<a href="https://twitter.com/AModelwho"><i class="bi bi-twitter"></i></a>
+</h3>
+<h3 class="anchored">
+<a href="https://www.instagram.com/austria_modelwho/"><i class="bi bi-instagram"></i></a>
+</h3>
+<h3 class="anchored">
+<a href="mailto:teamaustriamodelwho@gmail.com"><i class="bi bi-envelope"></i></a>
+</h3>
+</div>
+</li>
 <li>
 <a href="../../about.html">About</a>
 </li>
@@ -410,35 +423,17 @@ Research
 </div>
 </div>
 <style>
-.grid.committee {
-    gap: 0px 0px;
-    justify-content: center;
-    align-items: center;
+@media(max-width: 576px) {
+  #emptygrid {
+    display: none !important;
+  }
 }
 
-@media (min-width: 300px) {
-.committee-block {
-  max-width: 100px;
-  gap: 0px 0px;
-}
-}
 </style>
 
 
 
 </main> <!-- /main -->
-<script type="text/javascript">
-
-// replace cmd keyboard shortcut w/ control on non-Mac platforms
-const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
-if (!kPlatformMac) {
-   var kbds = document.querySelectorAll("kbd")
-   kbds.forEach(function(kbd) {
-      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
-   });
-}
-
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -459,6 +454,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
