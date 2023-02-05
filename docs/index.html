@@ -255,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="my-footer-home">
 <div class="my-footer-first-column">
-<p><img src="AM_footer.png" width="75%" alt="AM WHO"><br> Connecting global health enthusiasts in and around Austria.</p>
+<p><a href="./index.html"><img src="AM_footer.png" width="75%" alt="AM WHO"></a><br> Connecting global health enthusiasts in and around Austria.</p>
 </div>
 <div class="my-footer-other-column">
 <h4>
@@ -344,10 +344,35 @@ Research
 </ul>
 </div>
 </div>
+<div class="sponsors">
+<div class="sponsors-wrapper">
+<section id="our-sponsors" class="text-center">
+<h3>Our sponsors</h3>
+<p><br></p>
+</section>
+<div class="grid text-center">
+<div class="g-col-lg-3 g-col-6 sponsor-logo">
+<p><img src="images/KL-Logo.png" width="100%" alt="KL Logo"></p>
+</div>
+<div class="g-col-lg-3 g-col-6 sponsor-logo">
+<p><img src="images/EcoPlus-Logo.png" width="100%" alt="EcoPlus Logo"></p>
+</div>
+<div class="g-col-lg-3 g-col-6 sponsor-logo">
+<p><img src="images/Placeholder1-Logo.png" width="100%" alt="EcoPlus Logo"></p>
+</div>
+<div class="g-col-lg-3 g-col-6 sponsor-logo">
+<p><img src="images/Placeholder2-Logo.png" width="100%" alt="EcoPlus Logo"></p>
+</div>
+</div>
+<div class="text-center">
+<p>If you are interested in becoming a sponsor, please <a href="docs/contact/index.html">contact us</a>.</p>
+</div>
+</div>
+</div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-const swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -373,11 +398,8 @@ const swiper = new Swiper('.swiper', {
   keyboard: true,
 });
 
-$(".swiper").hover(function() {
-    (this).swiper.autoplay.stop();
-}, function() {
-    (this).swiper.autoplay.start();
-});
+document.querySelector('.swiper').onmouseenter = function () {swiper.autoplay.stop();}
+document.querySelector('.swiper').onmouseleave = function () {swiper.autoplay.start();}
 
 </script>
 
