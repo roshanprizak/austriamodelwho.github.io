@@ -174,9 +174,29 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="images/April2023_speakers_banner.png" class="img-fluid" style="width:100.0%" title="Expert talks"></p>
+<div class="swiper-container bottom-pad">
+<!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide">
+<img src="../../april2023_program/1.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/2.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/3.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/4.png" style="width:100%">
+</div>
+</div>
+</div>
+</div>
 <div class="h3 text-center">
-<p><a href="https://opencampus.kl.ac.at/de/application" target="_blank">Registrations are open! <br> Register now and claim the early-bird offer!</a></p>
+<p><a href="https://opencampus.kl.ac.at/de/application" target="_blank">Registrations are open! <br> Click here to register now!</a></p>
 </div>
 <p>Very briefly, these are the steps you need to follow.</p>
 <ol type="1">
@@ -456,6 +476,46 @@ If you are interested in becoming a sponsor, please <a href="docs/contact/index.
 </div>
 </div>
 </div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<style>
+.description .description-button-link .button-18-normal:hover { 
+  background-color: #fff !important;
+  color: #39729e !important;
+}
+</style>
+
+<script>
+var swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Autoplay
+  autoplay: {
+    delay: 3000, // 4s
+    disableOnInteraction: false,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  keyboard: true,
+});
+
+document.querySelector('.swiper').onmouseenter = function () {swiper.autoplay.stop();}
+document.querySelector('.swiper').onmouseleave = function () {swiper.autoplay.start();}
+
+</script>
 
 
 

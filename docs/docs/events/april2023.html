@@ -179,9 +179,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-when-and-where" id="toc-what-when-and-where" class="nav-link active" data-scroll-target="#what-when-and-where">What, when and where?</a></li>
+  <li><a href="#expert-talks" id="toc-expert-talks" class="nav-link active" data-scroll-target="#expert-talks">Expert talks</a></li>
+  <li><a href="#what-when-and-where" id="toc-what-when-and-where" class="nav-link" data-scroll-target="#what-when-and-where">What, when and where?</a></li>
   <li><a href="#program" id="toc-program" class="nav-link" data-scroll-target="#program">Program</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   <li><a href="#organizing-committee" id="toc-organizing-committee" class="nav-link" data-scroll-target="#organizing-committee">Organizing Committee</a></li>
   </ul>
 </nav>
@@ -192,7 +192,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="../../images/April2023_speakers_banner.png" class="img-fluid" style="width:100.0%" title="Expert talks"></p>
+<section id="expert-talks" class="level3">
+<h3 class="anchored" data-anchor-id="expert-talks">Expert talks</h3>
+<div class="swiper-container bottom-pad">
+<!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide">
+<img src="../../april2023_program/1.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/2.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/3.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/4.png" style="width:100%">
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="what-when-and-where" class="level3">
 <h3 class="anchored" data-anchor-id="what-when-and-where">What, when and where?</h3>
 <p>The Model WHO simulation on “Climate Change and Health” will take place between 14-16 April 2023, over the weekend from Friday to Sunday, at the Karl Landsteiner University of Health Sciences in Krems, Austria.</p>
@@ -200,10 +223,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="program" class="level3">
 <h3 class="anchored" data-anchor-id="program">Program</h3>
-<p>To be announced ..</p>
-</section>
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources</h3>
+<div class="swiper-container bottom-pad">
+<!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide">
+<img src="../../april2023_program/5.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/6.png" style="width:100%">
+</div>
+<div class="swiper-slide">
+<img src="../../april2023_program/7.png" style="width:100%">
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="organizing-committee" class="level3">
 <h3 class="anchored" data-anchor-id="organizing-committee">Organizing Committee</h3>
@@ -450,12 +487,46 @@ If you are interested in becoming a sponsor, please <a href="docs/contact/index.
 </div>
 </div>
 </div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <style>
 .description .description-button-link .button-18-normal:hover { 
   background-color: #fff !important;
   color: #39729e !important;
 }
 </style>
+
+<script>
+var swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Autoplay
+  autoplay: {
+    delay: 3000, // 4s
+    disableOnInteraction: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  keyboard: true,
+});
+
+document.querySelector('.swiper').onmouseenter = function () {swiper.autoplay.stop();}
+document.querySelector('.swiper').onmouseleave = function () {swiper.autoplay.start();}
+
+</script>
 
 
 
